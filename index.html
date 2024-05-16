@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MEGIDEV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url("background.jpg");
+      background-size: cover;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .profile-container {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      background-color: white;
+    }
+
+    #profile-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #profile-name {
+      font-size: 54px;
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      padding: 20px 30px;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      background-color: transparent;
+      color: white;
+      width: auto;
+      max-width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .button-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .button-text {
+      flex-grow: 1;
+    }
+
+    .footer-text {
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-size: 12px;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 200px;
+      height: 10px;
+      margin: 0 auto;
+      padding: 0;
+      background-color: transparent;
+      outline: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      background: #fff;
+      border-radius: 5px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #fff;
+      margin-top: -3px;
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .fade-text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      animation: fade 2s infinite alternate;
+      opacity: 0;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .button {
+        padding: 25px 35px;
+        max-width: 350px;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .profile-container {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+      }
+
+      #profile-name {
+        font-size: 72px;
+      }
+
+      .button-container {
+        flex-wrap: nowrap;
+      }
+
+      .button {
+        padding: 30px 40px;
+        margin: 20px;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-text" id="background-text">Welcome to MEGIDEV</div>
+
+  <header>
+    <div class="profile-container">
+      <img src="profile.jpg" alt="Foto Profil" id="profile-pic">
+    </div>
+    <div id="profile-name">MEGIDEV</div>
+  </header>
+
+  <div class="main-content">
+    <main>
+      <div class="button-container">
+        <a href="https://chat.whatsapp.com/KUqKJcqDBpX8ECoUkV3NI5" class="button">
+          <img src="icon1.png" alt="Group" class="button-icon">
+          <span class="button-text">Grup</span>
+        </a>
+        <a href="https://wa.me/message/ZKMECRWXSTHHG1" class="button">
+          <img src="icon2.png" alt="wa admin" class="button-icon">
+          <span class="button-text">WA Admin</span>
+        </a>
+        <a href="https://t.me/muhammad_firdaus235" class="button">
+          <img src="icon3.png" alt="Telegram" class="button-icon">
+          <span class="button-text">Telegram</span>
+        </a>
+        <a href="mailto:Firdausdeveloperbotzofficial2@gmail.com" class="button">
+          <img src="icon4.png" alt="Gmail" class="button-icon">
+          <span class="button-text">Gmail</span>
+        </a>
+        <a href="https://www.tiktok.com/@muhammad_firdaus235?_t=8lomOg3LQxO&_r=1" class="button">
+          <img src="icon5.png" alt="tiktok-1" class="button-icon">
+          <span class="button-text">TikTok-1</span>
+        </a>
+        <a href="https://www.tiktok.com/@muhammad_firdaus231?_t=8mILpn7wyHw&_r=1" class="button">
+          <img src="icon6.png" alt="tiktok-2" class="button-icon">
+          <span class="button-text">TikTok-2</span>
+        </a>
+        <a href="https://www.instagram.com/megi.dev235?igsh=MThtNTVjNTBqNDU1" class="button">
+          <img src="icon7.png" alt="instagram-1" class="button-icon">
+          <span class="button-text">Instagram-1</span>
+        </a>
+        <a href="https://www.instagram.com/muhammad_firdaus231?igsh=c3RiZ2JzdDU1MmZu" class="button">
+          <img src="icon8.png" alt="instagram-2" class="button-icon">
+          <span class="button-text">Instagram-2</span>
+        </a>
+        <a href="https://saweria.co/MEGIDEV" class="button">
+          <img src="icon9.png" alt="saweria" class="button-icon">
+          <span class="button-text">Saweria</span>
+        </a>
+        <a href="https://trakteer.id/megidev" class="button">
+          <img src="icon10.png" alt="trakteer" class="button-icon">
+          <span class="button-text">Trakteer</span>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.5" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: -5px;">
+
+  <div class="fade-text" id="creator-text" style="top: 103%;">Created by dausofc</div>
+
+  <script>
+    var audio = new Audio("audio.mp3");
+    audio.volume = 0.5;
+    
+    document.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+
+    var volumeControl = document.getElementById('volume-control');
+    volumeControl.addEventListener('input', function() {
+      audio.volume = this.value;
+    });
+
+    var fadeText = document.querySelectorAll('.fade-text');
+    fadeText.forEach(function(item) {
+      setInterval(function() {
+        item.style.opacity = (item.style.opacity === '0' ? '1' : '0');
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
